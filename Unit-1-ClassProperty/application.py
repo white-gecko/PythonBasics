@@ -14,10 +14,18 @@ class OurClass :
 # The following code is directly executed when this file is called
 print("Hello Beautyfull World!")
 
+# Now we create two instances of our class, an instance is also called object.
+# A class is an abstract definition, while an object is an actuall thing which has the properties defined by the class
+# (By convention also variables starts with a lower case letter)
 ourObject = OurClass()
+ourSecondObject = OurClass()
 
-print("The default value of our property is:", ourObject.aProperty)
+# We can access the properties of an object
+print("The default value of 'aProperty' of 'ourObject' is:", ourObject.aProperty)
+print("The default value of 'aProperty' of 'ourSecondObject' is:", ourSecondObject.aProperty)
 
+# and we can change the properties of an object
 ourObject.aProperty = "changed value"
 
-print("The changed value of our property is:", ourObject.aProperty)
+print("The changed value of 'aProperty' of 'ourObject' is:", ourObject.aProperty)
+print("The value of 'aProperty' of 'ourSecondObject' is still:", ourSecondObject.aProperty)
